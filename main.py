@@ -14,3 +14,6 @@ manager.add_prod(product3)
 manager.display_all_prod()
 
 print(f"Total price of all products: {manager.total_price()}$")
+
+manager.remove_product_by_name("Canvas")
+print(manager.list_products())
