@@ -12,15 +12,13 @@ class ProductManager:
         for product in self.products:
             product.display_info()
             
-    def total_price(self):
-        total = sum(product.price for product in self.products)
-        return total
+    def total_prod_value(self):
+        return sum(product.price * product.quantity for product in self.products)
         
     def remove_product_by_name(self,product_name):
         self.products = [product for product in self.products if product != product_name]
       
-    def list_products(self):
-        return self.products
+      
         
 
         
