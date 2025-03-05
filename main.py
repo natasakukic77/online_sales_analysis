@@ -3,17 +3,14 @@ from product import Product
 
 manager = ProductManager()
 
-product1 = Product("Aquarelle colour pencils",250,20)
-product2 = Product ("Canvas", 70, 200)
-product3 = Product("Oil pastels",133, 45)
+product1 = Product("woodworking tools",250,40)
+product2 = Product ("hammer", 70, 100)
+product3 = Product("chisels",133, 13)
 
 manager.add_prod(product1)
 manager.add_prod(product2)
 manager.add_prod(product3)
 
-manager.display_all_prod()
-
-print(f"Total price of all products: {manager.total_price()}$")
 
 manager.remove_product_by_name("Canvas")
 print(manager.list_products())
